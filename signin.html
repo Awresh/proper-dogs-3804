@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <style>
+      #main {
+        display: grid;
+        margin-top: 10px;
+        grid-template-columns: repeat(2, 500px);
+        justify-content: center;
+        gap: 70px;
+        padding-bottom: 20px;
+      }
+      #main>div{
+        height: 550px;
+        margin-left: -40px;
+      }
+      #login {
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      #main p{
+        font-size: 24px;
+        font-weight: bold;
+        color: #808080;
+      }
+      #main>div:nth-child(1) a{
+        display: flex;
+        width: 48%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px 30px;
+        border-radius: 30px;
+        text-decoration: unset;
+        color: white;
+        background-color:rgb(14, 196, 84) ;
+        font-size: 14px;
+      }
+
+      #main p{
+        width: 70%;
+       margin: 30px 0px;
+      }
+      #main h1{
+        font-size: 52px;
+        margin-top: 50px;
+      }
+      #prode{
+        margin-bottom: 20px;
+        margin-left: 0px;
+        font-size: 15px;
+        color: rgb(14, 196, 84);
+      }
+      #Logo{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 25px;
+        margin: 50px 0px;
+      }
+      #Logo>img{
+        width: 100%;
+      }
+      #login{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      #login a{
+       text-decoration: unset;
+       border: 1px solid #d4cbcb;
+       border-radius: 5px;
+       padding: 6px 120px;
+       color: #767676;
+       font-weight: 500;
+       display: flex;
+       gap: 5px;
+       align-items: center;
+       justify-content: center;
+      }
+      h4{
+        font-size: 24px;
+        margin: 50px 50px 50px;
+      }
+      #login>div:first-child{
+        text-align: center;
+
+      }
+      a>img{
+        width: 30px;
+        margin: auto;
+        border-radius: 50%;
+      }
+      span{
+        margin: 30px;
+        color: black;
+      }
+     form{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      input{
+        padding: 15px;
+        width: 375px;
+        margin-bottom: 25px;
+        border-radius: 5px;
+        border: 1px solid #d4cbcb;
+      }
+      input:last-child{
+        margin: auto;
+        width: 150px;
+        border-radius: 30px;
+        color: white;
+        background-color: rgb(14, 196, 84);
+      }
+      #main>#login>form>a{
+        border: none;
+        color: rgb(14, 196, 84);
+        margin-bottom: 30px;
+      }
+      #main>#login>form>a:hover{
+        text-decoration: underline;
+      }
+      #accont{
+        display: flex;
+      }
+      #accont>a{
+        margin: auto;
+        color: rgb(14, 196, 84);
+        padding: 9px;
+        margin: auto -30px;
+        border: none;
+      }
+      #accont>a:hover{
+        text-decoration: underline;
+      }
+      
+  
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <img
+        src="https://cdn-m.timecamp.com/img/greenbranding/colorLogo.svg"
+        alt=""
+      />
+    </div>
+
+    <div id="main">
+      <div>
+        <span id="prode">Product update</span>
+        <h1>TimeCamp Plugin <br>for Google<br>Chrome</h1>
+        <p>Track time without leaving Chrome in 70+ online apps.</p>
+        <div><a href=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chrome"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg> Add TimeCamp for Chrome</a></div>
+        <div  id="Logo">
+          <img src="https://cdn.timecamp.com/res/css/images/crozdesk-icon.1658395295.png" alt="">
+          <img src="https://cdn.timecamp.com/res/css/images/capterra-icon.1658395295.png" alt="">
+          <img src="https://cdn.timecamp.com/res/css/images/crowd-icon.1658395295.png" alt="">
+          <img src="https://cdn.timecamp.com/res/css/images/get-app-icon.1658395295.png" alt="">
+        </div>
+      </div>
+
+      <div id="login">
+        <div>
+          <h4>Log in to TimeCamp</h4>
+          <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BxIFDiqRSADS_dryOjRxIdflIGgt8vianZy7fPOHmGz8HsBUi-lggRTn5-raiCOnF0Q&usqp=CAU" alt=""> Login with Google</a>
+        </div>
+        <span>Or</span>
+        <form>
+          <input type="email" name="" id="" placeholder="Email">
+          <input type="password" placeholder="Password">
+          <a  href="">Forgotten Password?</a>
+          <input id="sub" type="submit" value="Log In">
+        </form>
+        <div id="accont" >
+          <a href="">No account? Sign up</a><span>Or</span><a href="">Log in with SSO</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
