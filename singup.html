@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <style>
+      #navbar {
+        justify-content: space-between;
+      }
+      a {
+        text-decoration: unset;
+        align-items: center;
+        margin: 10px 0px;
+        font-weight: bold;
+        color: black;
+      }
+      a:hover {
+        color: black;
+      }
+      #container {
+        margin: 70px 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+      }
+      #container > div:first-child h1 {
+        font-size: 45px;
+        margin-bottom: 35px;
+      }
+      #line {
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      #line img {
+        margin: 30px 0px;
+      }
+      #icon {
+        display: flex;
+      }
+      #icon > img {
+        width: 15%;
+        margin-right: 50px;
+      }
+      #secondp {
+        margin-bottom: 50px;
+      }
+      #line > div span {
+        font-weight: bold;
+      }
+      #login {
+        margin: 0px 50px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 30px;
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+      h1 {
+        font-size: 36px;
+        margin: 20px;
+      }
+      h4 {
+        font-size: 25px;
+        color: #767676;
+      }
+      a > img {
+        width: 30px;
+        margin: auto 15px;
+        border-radius: 50%;
+      }
+      #login > a {
+        margin: 10px auto;
+        border: 1px solid #c9c5c5;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        width: 70%;
+        align-items: center;
+        padding: 3px;
+      }
+      #login > a:hover {
+        background-color: #eeeeee;
+      }
+      h5 {
+        color: #767676;
+        margin: 15px auto;
+      }
+      form {
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      input {
+        padding: 12px;
+        width: 325px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #d4cbcb;
+      }
+      input:last-child {
+        margin: -10px auto;
+        margin-top: 15px;
+        width: 150px;
+        border-radius: 30px;
+        color: white;
+        background-color: rgb(14, 196, 84);
+        font-weight: bold;
+      }
+      input:last-child:hover {
+        background-color: rgb(7, 163, 67);
+      }
+      #container > #login > form > a {
+        border: none;
+        color: rgb(14, 196, 84);
+        margin-bottom: 30px;
+      }
+      #login > span {
+        margin: 15px auto;
+      }
+      #login > p {
+        margin: 20px 0px;
+        font-size: 15px;
+      }
+      #login > p a {
+        color: rgb(14, 196, 84);
+        text-decoration: unset;
+        font-weight: 100;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <img
+        src="https://cdn-m.timecamp.com/img/greenbranding/colorLogo.svg"
+        alt=""
+      />
+      <a href="signin.html">Log in</a>
+    </div>
+
+    <div id="container">
+      <div>
+        <h1>Loved by customers and recognized among online communities.</h1>
+        <img
+          src="https://cdn.timecamp.com/res/css/images/review-icon-signup.1658395295.svg"
+          alt=""
+        />
+        <div id="line">
+          <div>
+            <p>
+              Counting every <br />
+              second is easy with TimeCamp.
+            </p>
+            <img
+              src="https://cdn.timecamp.com/res/css/images/stars-reviews-signup.1658395295.svg"
+              alt=""
+            />
+            <p id="secondp"><span>Emily, </span>Lead Software Engineer</p>
+          </div>
+          <div>
+            <p>
+              Great tool to measure the time dedicated to tasks and projects.
+            </p>
+            <img
+              src="https://cdn.timecamp.com/res/css/images/stars-reviews-signup.1658395295.svg"
+              alt=""
+            />
+            <p><span>Enrique, </span> Director<br />Operaciones at Consultor</p>
+          </div>
+          <div>
+            <p>
+              It has removed all our worries about tracking time and activities.
+            </p>
+            <img
+              src="https://cdn.timecamp.com/res/css/images/stars-reviews-signup.1658395295.svg"
+              alt=""
+            />
+            <p><span>Sarah, </span> Practice Lead at Cloud & Emerging Tech</p>
+          </div>
+        </div>
+        <div id="icon">
+          <img
+            src="https://cdn.timecamp.com/res/css/images/leader-summer-reviews-signup.1658395295.svg"
+            alt=""
+          />
+          <img
+            src="https://cdn.timecamp.com/res/css/images/easiest-to-use-icon-review-signup.1658395295.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div id="login">
+        <h1>Start tracking time</h1>
+        <h4>
+          Create an account and start <br />
+          with a free 14-day trial
+        </h4>
+        <h5>All features. No credit card required</h5>
+        <a href=""
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BxIFDiqRSADS_dryOjRxIdflIGgt8vianZy7fPOHmGz8HsBUi-lggRTn5-raiCOnF0Q&usqp=CAU"
+            alt=""
+          />
+          Sing up with Google</a
+        >
+        <span>Or</span>
+        <form action="">
+          <input id="email" type="email" placeholder="Email" />
+          <input id="password" type="password" placeholder="Password" />
+          <input id="phone" type="phone" placeholder="Phone (optional)" />
+          <input type="submit" name="" id="" value="Sing up for free" />
+        </form>
+        <p>
+          By signing up you agree to our <a href="">Terms of Service</a
+          ><br />and <a href="">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  document.querySelector("form").addEventListener("submit", signup);
+  let data = JSON.parse(localStorage.getItem("userData")) || [];
+  function signup() {
+    event.preventDefault();
+
+    let Email = document.querySelector("#email").value;
+    let Password = document.querySelector("#password").value;
+    let Phone = document.querySelector("#phone").value;
+    if (Email != "" && Password != "") {
+      if (
+        data.some(function (ele) {
+          return ele.email == Email;
+        })
+      ) {
+        alert("Email Allredy Exist");
+      } else {
+        document.querySelector("#email").style.borderColor = "#949090";
+        document.querySelector("#password").style.borderColor = "#949090";
+        obj = {
+          phone: Phone,
+          email: Email,
+          password: Password,
+        };
+        data.push(obj);
+        localStorage.setItem("userData", JSON.stringify(data));
+        alert("Sing Up Success Full");
+        window.location.href="singin.html"
+      }
+    } else {
+      document.querySelector("#email").style.borderColor = "red";
+      document.querySelector("#password").style.borderColor = "red";
+      alert(" Pleas Fill all details below");
+    }
+  }
+</script>

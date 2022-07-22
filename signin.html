@@ -41,6 +41,9 @@
         background-color:rgb(14, 196, 84) ;
         font-size: 14px;
       }
+      #main>div:nth-child(1) a:hover{
+        background-color: rgb(7, 163, 67);
+      }
 
       #main p{
         width: 70%;
@@ -116,11 +119,14 @@
         border: 1px solid #d4cbcb;
       }
       input:last-child{
-        margin: auto;
+        margin: -10px auto;
         width: 150px;
         border-radius: 30px;
         color: white;
         background-color: rgb(14, 196, 84);
+      }
+      input:last-child:hover{
+        background-color: rgb(7, 163, 67);
       }
       #main>#login>form>a{
         border: none;
@@ -144,7 +150,6 @@
         text-decoration: underline;
       }
       
-  
     </style>
   </head>
   <body>
@@ -160,7 +165,7 @@
         <span id="prode">Product update</span>
         <h1>TimeCamp Plugin <br>for Google<br>Chrome</h1>
         <p>Track time without leaving Chrome in 70+ online apps.</p>
-        <div><a href=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chrome"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg> Add TimeCamp for Chrome</a></div>
+        <div><a id="key" href=""><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chrome"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="4"></circle><line x1="21.17" y1="8" x2="12" y2="8"></line><line x1="3.95" y1="6.06" x2="8.54" y2="14"></line><line x1="10.88" y1="21.94" x2="15.46" y2="14"></line></svg> Add TimeCamp for Chrome</a></div>
         <div  id="Logo">
           <img src="https://cdn.timecamp.com/res/css/images/crozdesk-icon.1658395295.png" alt="">
           <img src="https://cdn.timecamp.com/res/css/images/capterra-icon.1658395295.png" alt="">
@@ -176,15 +181,41 @@
         </div>
         <span>Or</span>
         <form>
-          <input type="email" name="" id="" placeholder="Email">
-          <input type="password" placeholder="Password">
+          <input  type="email" name="" id="email" placeholder="Email">
+          <input id="password" type="password" placeholder="Password">
           <a  href="">Forgotten Password?</a>
           <input id="sub" type="submit" value="Log In">
         </form>
         <div id="accont" >
-          <a href="">No account? Sign up</a><span>Or</span><a href="">Log in with SSO</a>
+          <a href="singup.html">No account? Sign up</a><span>Or</span><a href="">Log in with SSO</a>
         </div>
       </div>
     </div>
   </body>
 </html>
+<script>
+  document.querySelector("form").addEventListener("submit",signup);
+ let data=JSON.parse(localStorage.getItem("userData"))||[];
+ function signup(){
+     event.preventDefault();
+     let Email=document.querySelector("#email").value;
+     let Password=document.querySelector("#password").value
+     let flag=true;
+     if(data.length==0){
+         alert ("User not Exist Pleas Signup")
+     }
+     data.forEach(function(ele){
+         if(Email==ele.email && Password===ele.password){
+             alert ("Sign In Success");
+             window.location.href="index.html"
+             flag=false;
+         }
+         if(flag){
+             alert("somthing! wrong email or password")
+         }
+     })
+
+
+  }
+
+</script>
